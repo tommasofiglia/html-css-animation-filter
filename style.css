@@ -134,20 +134,21 @@
 
 .ex-11-icon {
     font-size: 60px;
-    transition: transform 1s linear;
 }
 
 .ex-11-icon:hover {
-  transform: rotate(360deg);
   animation-name: turn2;
   animation-iteration-count: 1;
-  animation-duration: 0.5s;
-  animation-delay: 0.80s;
+  animation-duration: 1.5s;
 }
 
 @keyframes turn2{
  0%{
-  transform: rotate(270deg);
+  transform: rotate(0deg);
+}
+
+75%{
+ transform: rotate(270deg);
 }
 
 100%{
