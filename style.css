@@ -139,7 +139,7 @@
 .ex-11-icon:hover {
   animation-name: turn2;
   animation-iteration-count: 1;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @keyframes turn2{
@@ -147,7 +147,7 @@
   transform: rotate(0deg);
 }
 
-75%{
+90%{
  transform: rotate(270deg);
 }
 
