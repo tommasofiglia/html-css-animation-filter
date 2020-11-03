@@ -114,35 +114,92 @@
 /* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
-    animation: rotation-10 1s linear;
+    animation-name: turn;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1000ms;
 }
 
-@keyframes rotation-10{
+@keyframes turn{
  0%{
-   rotate: 1turn;
+   transform: rotate(0deg);
  }
+ 100%{
+   transform: rotate(-360deg);
+ }
+
 }
 
 /* Esercizio 11 */
 
 .ex-11-icon {
     font-size: 60px;
-    transition: rotate 1s linear;
+    transition: transform 1s linear;
 }
 
 .ex-11-icon:hover {
-  animation: rotation-11 1s;
-  animation-delay: 1s;
+  transform: rotate(360deg);
+  animation-name: turn2;
   animation-iteration-count: 1;
-  rotate: 270deg;
+  animation-duration: 0.5s;
+  animation-delay: 0.80s;
 }
 
-@keyframes rotation-11{
+@keyframes turn2{
  0%{
-   rotate: 0.75turn;
- }
+  transform: rotate(270deg);
 }
+
+100%{
+ transform: rotate(0deg);
+}
+}
+
+/* Esercizio12 */
+
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: altodod;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes altodod {
+
+  0%{
+    left:10%;
+  }
+  50%{
+    left: calc(100% - 60px)
+  }
+  100%{
+    left:10%;
+  }
+
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: bassodod;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes bassodod {
+
+  0%{
+    right: 20%;
+  }
+
+  50%{
+    right: calc(100% - 60px);
+  }
+
+  100%{
+    right: 20%;
+  }
+
+}
+
 
 
 
