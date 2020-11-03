@@ -111,14 +111,42 @@
   margin: 50px 90px;
 }
 
-
-
+/* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation-10 1s linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes rotation-10{
+ 0%{
+   rotate: 1turn;
+ }
+}
+
+/* Esercizio 11 */
+
 .ex-11-icon {
     font-size: 60px;
+    transition: rotate 1s linear;
 }
+
+.ex-11-icon:hover {
+  animation: rotation-11 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  rotate: 270deg;
+}
+
+@keyframes rotation-11{
+ 0%{
+   rotate: 0.75turn;
+ }
+}
+
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
